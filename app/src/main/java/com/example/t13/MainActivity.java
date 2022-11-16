@@ -131,7 +131,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Cambiar(View view){
-        Intent a = new Intent(this, T14.class);
+
+        Intent a = new Intent(this, T16.class);
         startActivity(a);
     }
 

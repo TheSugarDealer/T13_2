@@ -3,7 +3,6 @@ package com.example.t13;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.res.ColorStateList;
-import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
@@ -77,12 +76,14 @@ public class T14 extends AppCompatActivity {
         skSong.setMax(aPlayer.getDuration());
         skSong.setProgress(aPlayer.getCurrentPosition());
         skHandler.postDelayed(updateSong, 1000);
+
+
         /////////////////////////////////////////////////
-        btn_play = (Button) findViewById(R.id.btn_play);
+        btn_play = (Button) findViewById(R.id.butn_play);
         btn_repetir = (Button) findViewById(R.id.btn_repetir);
-        btn_siguiente = (Button) findViewById(R.id.btn_siguiente);
-        btn_stop = (Button) findViewById(R.id.btn_stop);
-        btn_anterior = (Button) findViewById(R.id.btn_anterior);
+        btn_siguiente = (Button) findViewById(R.id.butn_adelantar);
+        btn_stop = (Button) findViewById(R.id.butn_stop);
+        btn_anterior = (Button) findViewById(R.id.butn_atrasar);
         sk_song = (SeekBar) findViewById(R.id.sk_song);
         tv1 = (TextView) findViewById(R.id.tv1);
         tv2 = (TextView) findViewById(R.id.tv2);
@@ -98,6 +99,9 @@ public class T14 extends AppCompatActivity {
         sk_song.setMax(listamp3[posicion].getDuration());
         sk_song.setProgress(listamp3[posicion].getCurrentPosition());
         sk_handler.postDelayed(listaUpdateSong, 1000);
+
+
+
         btn_play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -240,6 +244,8 @@ public class T14 extends AppCompatActivity {
         }
         return nombre;
     }
+
+
     //hh:mm:ss
     private String getRHM(int milliseconds)
     {
@@ -274,6 +280,7 @@ public class T14 extends AppCompatActivity {
         }
 
     };
+
     @Override
     protected void onStop(){
         T14.super.onStop();

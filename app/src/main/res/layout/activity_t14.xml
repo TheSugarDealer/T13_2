@@ -92,7 +92,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btn_play"
+                android:id="@+id/butn_play"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -102,7 +102,7 @@
 
 
             <Button
-                android:id="@+id/btn_stop"
+                android:id="@+id/butn_stop"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -120,7 +120,7 @@
                 app:backgroundTint="@color/white" />
 
             <Button
-                android:id="@+id/btn_anterior"
+                android:id="@+id/butn_atrasar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -129,7 +129,7 @@
                 app:backgroundTint="@color/white" />
 
             <Button
-                android:id="@+id/btn_siguiente"
+                android:id="@+id/butn_adelantar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
